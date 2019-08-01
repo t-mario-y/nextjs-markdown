@@ -1,8 +1,5 @@
 # nextjs-markdown
-nextjs + materialui + ReactMarkdown
-
-公式サンプル通りに動かしていても、
-現状はmarkdown読み込みに失敗します。
+nextjs + materialui + @next/mdx
 
 # Blog template
 
