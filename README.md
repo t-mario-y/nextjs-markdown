@@ -1,8 +1,10 @@
 # nextjs-markdown
 nextjs + materialui + @next/mdx
 
-# Blog template
+Next.jsでmarkdownをparseする[公式サンプルリポジトリ](https://github.com/zeit/next.js/tree/canary/examples/with-markdown)  
+内部で使っている、[@zeit/next-mdx ライブラリが非推奨になっていた](https://github.com/zeit/next-plugins/tree/master/packages/next-mdx)ので、  
+[@next/mdx](https://github.com/zeit/next.js/tree/canary/packages/next-mdx) で置き換えた。
 
-## Usage
+また簡易的にmaterial-ui から使用できるようになっている。
 
-Simply copy the files into your project, or one of the [example applications](https://github.com/mui-org/material-ui/tree/master/examples), and import and use the `Blog` component.
+see also:https://github.com/t-mario-y/nextjs-portfolio/issues/5  
