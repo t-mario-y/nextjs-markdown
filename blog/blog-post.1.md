@@ -24,7 +24,7 @@ Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Sub-heading
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+This is Nozomi Superexpress, bound for Hakata.
 
 ### Sub-heading
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -16,6 +15,7 @@ import Button from '@material-ui/core/Button';
 import Divider from '@material-ui/core/Divider';
 import Container from '@material-ui/core/Container';
 import Post1 from './blog-post.1.md';
+import SideBar from '../components/SideBar';
 
 function MadeWithLove() {
   return (
@@ -86,13 +86,6 @@ const useStyles = makeStyles(theme => ({
     ...theme.typography.body2,
     padding: theme.spacing(3, 0),
   },
-  sidebarAboutBox: {
-    padding: theme.spacing(2),
-    backgroundColor: theme.palette.grey[200],
-  },
-  sidebarSection: {
-    marginTop: theme.spacing(3),
-  },
   footer: {
     backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(8),
@@ -127,23 +120,6 @@ const featuredPosts = [
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
   },
 ];
-
-const archives = [
-  'March 2020',
-  'February 2020',
-  'January 2020',
-  'December 2019',
-  'November 2019',
-  'October 2019',
-  'September 2019',
-  'August 2019',
-  'July 2019',
-  'June 2019',
-  'May 2019',
-  'April 2019',
-];
-
-const social = ['GitHub', 'Twitter', 'Facebook'];
 
 export default function Blog() {
   const classes = useStyles();
@@ -255,43 +231,9 @@ export default function Blog() {
               </Typography>
               <Divider />
               <Post1 />
-              {/* {posts.map(post => (
-                <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-                  {post}
-                </Markdown>
-              ))} */}
-              {/* markdown?????????????? */}
             </Grid>
             {/* End main content */}
-            {/* Sidebar */}
-            <Grid item xs={12} md={4}>
-              <Paper elevation={0} className={classes.sidebarAboutBox}>
-                <Typography variant="h6" gutterBottom>
-                  About
-                </Typography>
-                <Typography>
-                  Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit
-                  amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-                </Typography>
-              </Paper>
-              <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
-                Archives
-              </Typography>
-              {archives.map(archive => (
-                <Link display="block" variant="body1" href="#" key={archive}>
-                  {archive}
-                </Link>
-              ))}
-              <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
-                Social
-              </Typography>
-              {social.map(network => (
-                <Link display="block" variant="body1" href="#" key={network}>
-                  {network}
-                </Link>
-              ))}
-            </Grid>
-            {/* End sidebar */}
+            <SideBar />
           </Grid>
         </main>
       </Container>
